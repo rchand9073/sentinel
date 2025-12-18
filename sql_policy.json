@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "forbidden_keywords": [
+            "DROP",
+            "TRUNCATE",
+            "DELETE",
+            "ALTER"
+        ],
+        "require_limit": true
+    }
+}

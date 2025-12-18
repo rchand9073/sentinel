@@ -1,0 +1,25 @@
+{
+    "roles": {
+        "restricted": {
+            "allowed_tools": [
+                "read_file"
+            ],
+            "resource_scopes": {
+                "read_file": [
+                    "/public/*",
+                    "*.log"
+                ]
+            }
+        },
+        "admin": {
+            "allowed_tools": [
+                "*"
+            ],
+            "resource_scopes": {
+                "*": [
+                    "*"
+                ]
+            }
+        }
+    }
+}

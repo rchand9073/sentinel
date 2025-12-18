@@ -1,0 +1,17 @@
+{
+    "rules": {
+        "sensitive_files": [
+            "/etc/passwd",
+            ".env",
+            "id_rsa",
+            "config.yaml"
+        ],
+        "prohibited_commands": [
+            "rm -rf",
+            "shutdown",
+            ":(){ :|:& };:",
+            "wget",
+            "curl"
+        ]
+    }
+}

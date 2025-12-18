@@ -1,0 +1,20 @@
+{
+    "version": "1.0",
+    "description": "Sentinel SQL Data Guard Policy",
+    "rules": {
+        "forbidden_keywords": [
+            "DROP",
+            "TRUNCATE",
+            "GRANT",
+            "ALTER",
+            "REVOKE"
+        ],
+        "require_limit": true,
+        "max_rows_allowed": 100,
+        "sensitive_tables": [
+            "users",
+            "passwords",
+            "credit_cards"
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "version": "1.0",
+    "description": "Sentinel Default Security Policy",
+    "rules": {
+        "sensitive_files": [
+            ".env",
+            ".ssh",
+            "id_rsa",
+            "credentials.json",
+            "password.txt",
+            "/etc/shadow"
+        ],
+        "prohibited_commands": [
+            "curl",
+            "wget",
+            "nc -e",
+            "bash",
+            "sh",
+            "base64",
+            "cmd",
+            "powershell",
+            "cat /etc/passwd"
+        ],
+        "suspicious_domains": [
+            "evil-server.com",
+            "webhook.site",
+            "pastebin.com"
+        ]
+    }
+}
